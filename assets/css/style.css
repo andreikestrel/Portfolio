@@ -1,0 +1,204 @@
+:root {
+    --font-titulo: 'Comfortaa', cursive;
+    --font-subtitulo: 'Pathway Extreme', sans-serif;
+    --font-corpo: 'Source Code Pro', monospace;
+}
+
+/* Tela Inicial */
+.box-telaInicial {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5rem 3rem 5rem 3rem;
+    background-image: radial-gradient(circle at center, #5170FF, #FF66C4);
+    border-bottom: 10px solid black;
+    width: 100%;
+}
+
+.box-img {
+    width: auto;
+    margin: 3rem;
+    text-align: center;
+}
+
+.imagem-principal {
+    width: 25rem;
+    border-radius: 50%;
+    box-shadow: 0px 40px 10px 5px rgb(0, 0, 0);
+    /* clip-path: circle(50% at center); */
+}
+
+.imagem-mobile {
+    display: none;
+}
+
+.box-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30rem;
+    margin: 3rem;
+}
+
+.txt-titulo {
+    font-family: var(--font-titulo);
+    font-size: 6rem;
+    color: white;
+}
+
+.txt-subtitulo {
+    font-family: var(--font-subtitulo);
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    margin: 1.5rem 0;
+
+    color: yellow;
+}
+
+.txt-corpo {
+    font-family: var(--font-corpo);
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.botao-download {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-family: var(--font-subtitulo);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .botao-download:hover {
+    transform: scale(1.05);
+    border: 2px solid yellow;
+  }
+  
+  /* Estilos do ícone */
+  .botao-download .icone {
+    margin-right: 5px;
+  }
+  
+  .botao-linkedin {
+    background-color: blue;
+  }
+  
+  .botao-transparente {
+    background-color: transparent;
+    border: none;
+  }
+  
+
+.box-social {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: first baseline;
+    padding: 5rem 3rem 5rem 3rem;
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(81, 112, 255), rgba(255, 102, 196, 0)), url(/assets/img/cartoon.png);
+    background-repeat: no-repeat;
+    background-position: left 100% center;
+    background-size: contain;
+}
+
+.box-icons {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.icon {
+    transition: all 0.3s ease;
+    width: 10rem;
+    padding: 2rem;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+    transition: transform 0.8s;
+}
+
+.contato{
+    color: black;
+    font-size: 5rem;
+    padding-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: radial-gradient(circle at center, #5170FF, #FF66C4);
+    }
+
+    /*Tela inicial*/
+    .box-telaInicial {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        background: none;
+        border-bottom: 0;
+    }
+
+    .box-img {
+        margin: 2rem 0;
+    }
+
+    .imagem-mobile {
+        display: inline-block;
+        width: 15rem;
+        height: auto;
+        border-radius: 35%;
+    }
+
+    .imagem-principal {
+        display: none;
+    }
+
+    .box-text {
+        width: 80%;
+    }
+
+    .txt-titulo {
+        font-size: 2.5rem;
+    }
+
+    .txt-subtitulo {
+        font-size: 1.5rem;
+    }
+
+    .txt-corpo {
+        font-size: 1rem;
+    }
+
+    .box-text p {
+        width: 100%;
+    }
+
+    /*Social*/
+    .box-social {
+        background: none;
+        padding: 0.5rem;
+        align-items: center;
+        width: auto;
+    }
+
+    .box-icons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 5rem;
+        padding: 0.7rem;
+    }
+
+    .icon:hover {
+        transform: scale(1.1);
+    }
+}
