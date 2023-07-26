@@ -59,6 +59,7 @@
     font-family: var(--font-corpo);
     color: white;
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
 .botao-download {
