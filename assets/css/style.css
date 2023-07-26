@@ -183,6 +183,8 @@
         width: 152px;
         font-size: 1rem;
         padding: 10px;
+        margin-left: 5px;
+        margin-bottom: 5px;
     }
     /*Social*/
     .box-social {
