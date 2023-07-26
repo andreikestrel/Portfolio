@@ -135,6 +135,8 @@
 @media screen and (max-width: 768px) {
     body {
         background-image: radial-gradient(circle at center, #5170FF, #FF66C4);
+        max-width: 50%;
+        margin: 0;
     }
 
     /*Tela inicial*/
@@ -143,59 +145,62 @@
         align-items: center;
         padding: 0;
         background: none;
-        border-bottom: 0;
+        border: none;
     }
 
     .box-img {
-        margin: 2rem 0;
+        display: none;
     }
 
-    .imagem-mobile {
-        display: inline-block;
-        width: 15rem;
-        height: auto;
-        border-radius: 35%;
-    }
 
     .imagem-principal {
         display: none;
     }
-
+    .box-info{
+        width: auto;
+    }
     .box-text {
-        width: 80%;
+        width: 60%;
     }
 
     .txt-titulo {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .txt-subtitulo {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .txt-corpo {
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 
     .box-text p {
         width: 100%;
     }
-
+    .botao-download,.botao-linkedin{
+        text-align: center;
+        width: 80px;
+        font-size: 0.5rem;
+        padding: 10px;
+        margin: 5px;
+    }
     /*Social*/
     .box-social {
         background: none;
         padding: 0.5rem;
         align-items: center;
-        width: auto;
     }
-
+    .txt-subtitulo{
+        padding: 0;
+    }
     .box-icons {
         flex-direction: row;
         justify-content: center;
     }
 
     .icon {
-        width: 5rem;
+        width: 2.5rem;
         padding: 0.7rem;
     }
 
