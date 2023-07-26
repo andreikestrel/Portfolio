@@ -165,10 +165,12 @@
 
     .txt-titulo {
         font-size: 3rem;
+        text-align: center;
     }
 
     .txt-subtitulo {
         font-size: 2rem;
+        text-align: center;
     }
 
     .txt-corpo {
@@ -177,6 +179,11 @@
 
     .box-text p {
         width: 100%;
+    }
+    .box-btn-inicial{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
     .botao-download,.botao-linkedin{
         text-align: center;
@@ -189,6 +196,7 @@
         background: none;
         padding: 0.5rem;
         align-items: center;
+        width: auto;
     }
     .txt-subtitulo{
         padding: 0;
