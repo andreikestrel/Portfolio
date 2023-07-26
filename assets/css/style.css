@@ -160,19 +160,19 @@
         width: auto;
     }
     .box-text {
-        width: 60%;
+        width: max-content;
     }
 
     .txt-titulo {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .txt-subtitulo {
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
 
     .txt-corpo {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 
     .box-text p {
@@ -180,10 +180,9 @@
     }
     .botao-download,.botao-linkedin{
         text-align: center;
-        width: 80px;
-        font-size: 0.5rem;
+        width: 152px;
+        font-size: 1rem;
         padding: 10px;
-        margin: 5px;
     }
     /*Social*/
     .box-social {
