@@ -38,8 +38,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 500px;
-    width: 150px;
+    height: auto;
+    width: 10px;
     margin: 3rem;
 }
 .box-info-txt{
@@ -70,11 +70,19 @@ body{
     margin-bottom: 2rem;
     text-align: justify;
 }
-
+.box-btn-init{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: center;
+    width: 120px;
+}
 .botao-download {
     display: inline-block;
     align-items: center;
     justify-content: center;
+    height: max-content;
+    width: max-content;
     padding: 1rem;
     color: #F1F0E8;
     margin-right: 10px;
@@ -110,7 +118,6 @@ body{
     padding: 50px;
     background-color: #F1F0E8;
     border-bottom: 10px solid #35155D;
-    box-sizing: border-box;
 }
 .box-projetos {
     display: flex;
@@ -118,7 +125,6 @@ body{
     align-items: center;
     padding: 5rem 3rem 5rem 3rem;
     width: 100%;
-    box-sizing: border-box;
 }
 .projetos-titulo{
     font-family: var(--font-titulo);
@@ -237,10 +243,11 @@ body{
     .box-text p {
         width: 100%;
     }
-    .box-btn-inicial{
+    .box-btn-init{
         display: flex;
-        justify-content: center;
-        flex-direction: column;
+        justify-content: space-around;
+        align-items: baseline;
+        align-content: center;
     }
     .botao-download,.botao-linkedin{
         text-align: center;
