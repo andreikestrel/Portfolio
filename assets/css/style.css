@@ -118,9 +118,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 85px;
-    padding: 0.5rem;
+    height: 30px;
+    width: 90px;
+    padding: 10px 20px;
     color: #F1F0E8;
     margin-right: 10px;
     border-radius: 10px;
@@ -137,7 +137,8 @@ header{
   
   /* Estilos do ícone */
   .botao-download .icone {
-    margin-right: 5px;
+    font-size: 1.5rem;
+    margin-right: 8px;
   }
   
   .botao-linkedin {
