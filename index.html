@@ -16,8 +16,18 @@
 </head>
 
 <body>
-
-  <section class="box-telaInicial">
+  <header>
+    <h1 class="titulo-header">Andrei Barbosa</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#sobre-mim">Sobre mim</a></li>
+        <li><a href="#educacao">Educação</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="sobre-mim" class="box-telaInicial">
     <div class="box-img">
       <img class="imagem-principal" src="/assets/img/imagem-principal-r.png" alt="imagem de frente do Andrei Barbosa">
       <img class="imagem-mobile" src="/assets/img/imagem-principal-q.png" alt="imagem de frente do Andrei Barbosa">
@@ -46,55 +56,63 @@
       </div>
     </div>
   </section>
-  <section class="projetos">
-    <div class="box-projetos">
-      <h1 class="projetos-titulo">Conheça os principais projetos</h1>
-      <div class="projetos-box-card">
-        <div class="projeto-card">
-          <div class="card-header">
-            <h3>Meteora</h3>
-            <a class="btn-verMais" href="https://meteora-swart-theta.vercel.app/" target="_blank">🔗</a>
-          </div>
-          <div class="box-projeto-img-descricao"><img src="/assets/img/meteora.jpg" alt="" class="img-card">
-            <p class="projeto-descricao">O projeto Meteora é um inovador site de comércio eletrônico de moda, criado como parte do curso de
-              Bootstrap da
-              Alura. Desenvolvido com tecnologias modernas, incluindo Bootstrap Icons e o framework CSS Bootstrap,
-              oferece uma
-              experiência de compra online intuitiva e responsiva. </p>
-          </div>
-        </div>
-        <div class="projeto-card">
-          <div class="card-header">
-            <h3>Pomodoro</h3>
-            <a class="btn-verMais" href="https://pomodoro-six-rho.vercel.app/" target="_blank">🔗</a>
-          </div>
-          <div class="box-projeto-img-descricao"><img src="/assets/img/pomodoro.jpg" alt="" class="img-card">
-            <p class="projeto-descricao">
-              O projeto do Pomodoro utiliza JavaScript para a lógica do temporizador, HTML para estruturar a interface e
-              CSS para o design. Ele segue a técnica Pomodoro, permitindo aos usuários definir períodos de trabalho e
-              descanso para melhorar a produtividade.</p>
-          </div>
 
-        </div>
-        <div class="projeto-card">
-          <h3>teste</h3>
-          <div class="box-projeto-img-descricao"> <img src="https://cdn.mos.cms.futurecdn.net/Y7weFGYNyXjo6RsPDatstG.jpg" alt="" class="img-card">
-            <p>Laborum non cupidatat ut tempor ut est quis eu qui in non sit amet.</p>
-          </div>
-
-        </div>
-        <div class="projeto-card">
-          <h3>teste</h3>
-          <div class="box-projeto-img-descricao"><img src="https://cdn.mos.cms.futurecdn.net/Y7weFGYNyXjo6RsPDatstG.jpg" alt="" class="img-card">
-            <p class="projeto-descricao">Veniam ad adipisicing do anim non culpa culpa velit adipisicing ut quis consequat.</p>
-          </div>
-
-        </div>
+  <section id="educacao" class="minhasFormacoes">
+    <h1 class="formacoes-titulo">Educação</h1>
+    <div class="cards-formacao">
+      <div class="card-formacao">
+        <h3 class="tituto-formacao">Tecnólogo em Analise E Desenvolvimento de Sistemas (UNINTER)</h3>
+        <h4 class="data-formacao">2023 2025</h4>
+      </div>
+      <div class="card-formacao">
+        <h3 class="tituto-formacao">Bacharel em Ciências Biológicas (UFPEL)</h3>
+        <h4 class="data-formacao">2017 2022</h4>
+      </div>
+      <div class="card-formacao">
+        <h3 class="tituto-formacao">Formação Front-end (Alura)</h3>
+        <h4 class="data-formacao">2022</h4>
+      </div>
+      <div class="card-formacao">
+        <h3 class="tituto-formacao">Curso Programador Web(IFSUL)</h3>
+        <h4 class="data-formacao">2020</h4>
       </div>
     </div>
+
   </section>
 
-  <section class="box-social">
+  <section id="projetos" class="projetos">
+    <h1 class="projetos-titulo">Conheça os principais projetos</h1>
+  
+    <div class="box-projetos">
+      <div class="projeto-card">
+        <div class="card-header">
+          <h3>Meteora</h3>
+          <a class="btn-verMais" href="https://meteora-swart-theta.vercel.app/" target="_blank">🔗</a>
+        </div>
+        <div class="box-projeto-img-descricao"><img src="/assets/img/meteora.jpg" alt="" class="img-card">
+          <p class="projeto-descricao">O projeto Meteora é um inovador site de comércio eletrônico de moda, criado como
+            parte do curso de
+            Bootstrap da
+            Alura. Desenvolvido com tecnologias modernas, incluindo Bootstrap Icons e o framework CSS Bootstrap,
+            oferece uma
+            experiência de compra online intuitiva e responsiva. </p>
+        </div>
+      </div>
+      <div class="projeto-card">
+        <div class="card-header">
+          <h3>Pomodoro</h3>
+          <a class="btn-verMais" href="https://pomodoro-six-rho.vercel.app/" target="_blank">🔗</a>
+        </div>
+        <div class="box-projeto-img-descricao"><img src="/assets/img/pomodoro.jpg" alt="" class="img-card">
+          <p class="projeto-descricao">
+            O projeto do Pomodoro utiliza JavaScript para a lógica do temporizador, HTML para estruturar a interface e
+            CSS para o design. Ele segue a técnica Pomodoro, permitindo aos usuários definir períodos de trabalho e
+            descanso para melhorar a produtividade.</p>
+        </div>
+      </div>
+  </section>
+
+  <section id="contato" class="box-social">
     <div class="box-icons">
       <a href="https://www.linkedin.com/in/barbosaandrei/" class="icon linkedin" target="_blank">
         <img src="/assets/icons/linkedin-icon.svg" alt="Icone do Linkedin">
