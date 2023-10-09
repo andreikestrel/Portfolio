@@ -1,23 +1,14 @@
-# Projeto Andrei Barbosa | Web Developer
 
-![Andrei Barbosa | Web Developer](/assets/img/imagem-principal-r.png)
+# Portfólio - Andrei Barbosa
 
+Este é um projeto de portfólio pessoal desenvolvido como parte da disciplina de Fundamentos da Programação Web durante os estudos de Análise e Desenvolvimento de Sistemas. O objetivo principal foi aplicar os conhecimentos em HTML, CSS e JavaScript para criar um site interativo e responsivo que apresentasse minhas habilidades, experiências e projetos.
 
-## Sobre
+## Acesso ao Projeto
 
-O objetivo deste site é apresentar o portfólio de Andrei Barbosa, exibindo suas qualificações, experiência e habilidades como desenvolvedor web. É uma plataforma para compartilhar projetos realizados, demonstrar conhecimentos técnicos e promover o trabalho de Andrei no campo do desenvolvimento web.
+O projeto está disponível online no seguinte link: [https://andrei-barbosa-port.vercel.app/](https://andrei-barbosa-port.vercel.app/)
 
-## Tecnologias utilizadas
+Sinta-se à vontade para explorar o site, conhecer mais sobre mim e conferir os projetos que desenvolvi. Se tiver alguma pergunta ou feedback, não hesite em entrar em contato por meio das informações fornecidas na seção de Contato do site.
 
-- HTML
-- CSS
-- JavaScript
+---
 
-## Pré-requisitos
-
-- Navegador da web moderno
-
-## Como executar o projeto
-
-1. Clone o repositório: `git clone [URL do repositório]`
-2. Abra o arquivo `index.html` em um navegador web.
+*Este projeto foi desenvolvido como parte dos estudos na disciplina de Fundamentos da Programação Web do curso de Análise e Desenvolvimento de Sistemas.*
