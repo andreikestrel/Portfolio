@@ -169,6 +169,7 @@ header{
 }
 .cards-formacao{
     display: flex;
+    flex-direction: row;
 }
 .card-formacao {
     padding: 10px;
@@ -287,11 +288,11 @@ header{
 
 .box-social {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: first baseline;
+    flex-direction: column;
+    align-items: first center;
     padding: 5rem 3rem 5rem 3rem;
     height: 100%;
-    background-image: linear-gradient(to left, rgba(81, 113, 255, 0.24), rgba(255, 102, 196, 0)), url(/assets/img/cartoon.png);
+    background-image: linear-gradient(to right, rgba(81, 113, 255, 0.24), rgba(255, 102, 196, 0)), url(/assets/img/cartoon.png);
     background-repeat: no-repeat;
     background-position: left 100% center;
     background-size: contain;
@@ -301,6 +302,7 @@ header{
     display: flex;
     flex-direction: column;
     width: max-content;
+    margin: 0 30px;
 }
 
 .icon {
@@ -318,6 +320,74 @@ header{
     color: #F1F0E8;
     font-size: 5rem;
     padding-bottom: 2rem;
+}
+.contato-titulo{
+    font-family: var(--font-titulo);
+    font-size: 4rem;
+    text-align: center;
+    user-select: none;
+    padding: 15px;
+    color: #F1F0E8;
+    margin-bottom: 2rem;
+}
+.form-boxicons-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    width: 100%;
+}
+
+.formulario{
+    background-color: #f1f0e821;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 400px;
+    padding: 25px;
+    gap: 10px;
+}
+.formulario div{
+    width: 100%;
+    box-sizing: border-box;
+}
+.formulario input{
+    width: 95%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-family: var(--font-corpo);
+    text-align: center;
+}
+.label-form{
+    font-family: var(--font-subtitulo);
+    font-size: 1.5rem;
+    color: #F1F0E8;
+    margin-bottom: 3rem;
+}
+.input-mensagem{
+    height: 100px;
+    width: 95%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: var(--font-corpo);
+    text-align: center;
+}
+.btn-form{
+    font-family: var(--font-subtitulo);
+    font-size: 1.5rem;
+    color: #F1F0E8;
+    background-color: #35155D;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    width: 95%;
 }
 /*Responsividade*/
 @media screen and (max-width: 768px) {
@@ -421,6 +491,8 @@ header{
     }
     /*Social*/
     .box-social {
+        display: flex;
+        flex-direction: column;
         background: none;
         padding: 0.5rem;
         align-items: center;
@@ -441,5 +513,9 @@ header{
 
     .icon:hover {
         transform: scale(1.1);
+    }
+    .cards-formacao{
+        flex-direction: column;
+        align-items: center;
     }
 }

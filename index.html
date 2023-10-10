@@ -113,18 +113,37 @@
   </section>
 
   <section id="contato" class="box-social">
-    <div class="box-icons">
-      <a href="https://www.linkedin.com/in/barbosaandrei/" class="icon linkedin" target="_blank">
-        <img src="/assets/icons/linkedin-icon.svg" alt="Icone do Linkedin">
-      </a>
-      <a href="https://github.com/andreikestrel" class="icon github" target="_blank">
-        <img src="/assets/icons/github-icon.svg" alt="Icone do Github">
-      </a>
-      <a href="mailto:andreibarbosa.dev@gmail.com" class="icon email">
-        <img src="/assets/icons/email-icon.svg" alt="Icone de uma carta representando um email">
-      </a>
+    
+    <h2 class="contato-titulo">Meus contatos</h2>
+    <div class="form-boxicons-box">
+      <div class="box-icons">
+        <a href="https://www.linkedin.com/in/barbosaandrei/" class="icon linkedin" target="_blank">
+          <img src="/assets/icons/linkedin-icon.svg" alt="Icone do Linkedin">
+        </a>
+        <a href="https://github.com/andreikestrel" class="icon github" target="_blank">
+          <img src="/assets/icons/github-icon.svg" alt="Icone do Github">
+        </a>
+        <a href="mailto:andreibarbosa.dev@gmail.com" class="icon email">
+          <img src="/assets/icons/email-icon.svg" alt="Icone de uma carta representando um email">
+        </a>
+      </div>
+      <form class="formulario" action="#">
+        <div>
+          <label class="label-form" for="nome">Nome</label>
+          <input class="input-txt" type="text" id="nome" name="nome" placeholder="Insira seu nome aqui" required>
+        </div>
+        <div>
+          <label class="label-form" for="email">Email</label>
+          <input class="input-txt" type="email" id="email" name="email" placeholder="Insira seu email aqui" required>
+        </div>
+        <div>
+          <label id="label-mensagem" class="label-form" for="mensagem">Mensagem</label>
+          <textarea class="input-mensagem" id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui" required></textarea>
+        </div>
+        <input class="btn-form" type="submit" value="Enviar">
+      </form>
     </div>
-    <h2 class="txt-subtitulo contato">Meus contatos</h2>
+
   </section>
 
 
