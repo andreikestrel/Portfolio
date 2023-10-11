@@ -18,6 +18,15 @@ header{
     width: 100%;
     z-index: 1;
 }
+.logo-title-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.logo{
+    width: 30px;
+}
 .titulo-header{
     font-family: var(--font-titulo);
     font-size: 1.5rem;
@@ -31,6 +40,7 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: end;
+    margin-right: 10px;
 }
 .menu a{
     text-decoration: none;
