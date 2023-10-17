@@ -41,17 +41,30 @@ header{
     justify-content: space-around;
     align-items: end;
     margin-right: 10px;
+    gap: 20px;
+    margin-right: 20px;
 }
 .menu a{
     text-decoration: none;
     color: #F1F0E8;
-    padding: 0 1rem;
     font-size: 1.2rem;
-    transition: all 0.3s;
+    transition: all 0.5s;
+    position: relative;
+}
+.menu a::after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px #F8DE22;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out 
 }
 .menu a:hover{
     color: #F8DE22;
-    transform: scale(1.1);
+
+}
+.menu a:hover::after {
+    width: 100%; 
+    transform: scaleX(1);
 }
 
 /* Tela Inicial */
@@ -225,6 +238,7 @@ header{
     font-family: var(--font-titulo);
     font-size: 4rem;
     text-align: center;
+    margin-bottom: 6rem;
     user-select: none;
     padding: 15px;
     background-image: linear-gradient(to bottom, #ff66c4,#a95cff, #5171ff);
@@ -400,11 +414,14 @@ header{
     width: 95%;
 }
 /*Responsividade*/
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    header{
+        display: none;
+    }
     body {
         background-image: radial-gradient(circle at center, #5170FF, #FF66C4);
         max-width: 100%;
-        margin: 0;
+        margin: 10px 0;
     }
 
     /*Tela inicial*/
@@ -414,7 +431,8 @@ header{
         padding: 0;
         background: none;
         border: none;
-        margin-bottom: 10px;
+        margin: 4rem 0;
+        padding: 20px;
     }
 
     .box-img {
@@ -427,6 +445,9 @@ header{
     }
     .box-info{
         width: auto;
+    }
+    .box-info-txt{
+        width: 100%;
     }
     .box-text {
         width: max-content;
@@ -452,6 +473,7 @@ header{
     }
     .box-btn-init{
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: baseline;
         align-content: center;
@@ -462,11 +484,17 @@ header{
         font-size: 1rem;
         margin: 15px;
     }
+     /*Formações*/
+     .minhasFormacoes {
+        margin-top: 2rem;
+        height: auto;
+        border: none;
+    }
     /*Projetos*/
     .projetos{
-        padding: 0;
         background-color: #F1F0E8;
-        border-bottom: 10px solid #35155D;
+        border-bottom: none;
+        width: 100%;
     }
     .box-projetos {
         display: flex;
@@ -474,24 +502,24 @@ header{
         align-items: center;
         padding: 0;
     }
-    .projetos-titulo{
-        margin-top: 40px
-    }
+    
     .projetos-box-card {
         flex-direction: column;
         margin: 10px;
     }
-    .projeto-card {
-        width: 600px;
-        height: 300px;
-        margin: 10px;
+    .projeto-card{
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
     }
     .box-projeto-img-descricao {
-        flex-direction: row;
-        align-items:center;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
         width: 100%;
-        height: 100%;
+        box-sizing: content-box;
         margin-bottom: 0;
+        padding: 0 10px;
     }
     .img-card {
         max-width: 300px;
@@ -503,6 +531,7 @@ header{
     .box-social {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         background: none;
         padding: 0.5rem;
         align-items: center;
@@ -510,6 +539,16 @@ header{
     }
     .txt-subtitulo{
         padding: 0;
+    }
+    .form-boxicons-box{
+        flex-direction: column-reverse;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+    .formulario{
+        width: 100%;
+        padding: 5px;
     }
     .box-icons {
         flex-direction: row;
@@ -519,6 +558,10 @@ header{
     .icon {
         width: 2.5rem;
         padding: 0.7rem;
+    }
+    .txt-titulo , .contato-titulo, .formacoes-titulo, .projetos-titulo  {
+        font-size: 3rem;
+        margin: 40px 0;
     }
 
     .icon:hover {
